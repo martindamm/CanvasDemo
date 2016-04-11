@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\makn\\AndroidStudioProjects\\course2016\\CanvasDemo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\makn\\AndroidStudioProjects\\course2016\\CanvasDemo\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "/Users/martindamm/Desktop/Skole/PBAWEB 2 semester/Mobile/Øvelser/CanvasDemo/C:\\Users\\makn\\AndroidStudioProjects\\course2016\\CanvasDemo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "/Users/martindamm/Desktop/Skole/PBAWEB 2 semester/Mobile/Øvelser/CanvasDemo/C:\\Users\\makn\\AndroidStudioProjects\\course2016\\CanvasDemo\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "/Users/martindamm/Desktop/Skole/PBAWEB 2 semester/Mobile/Øvelser/CanvasDemo/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/martindamm/Desktop/Skole/PBAWEB 2 semester/Mobile/Øvelser/CanvasDemo/app/src/main/res/menu/main.xml"
     }
 ]

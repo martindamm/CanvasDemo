@@ -14,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/points" />
-    
+
+    <!-- Notice how the custom view is referenced here-->
     <org.example.canvasdemo.MyView
         android:id="@+id/gameView"
         android:layout_width="match_parent"
