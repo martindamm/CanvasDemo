@@ -8,26 +8,69 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class MainActivity extends Activity {
 	
 	MyView myView;
+	ArrayList<Coins> coin = new ArrayList<Coins>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Button button = (Button) findViewById(R.id.moveButton);
+		Button button = (Button) findViewById(R.id.moveLeft);
+		myView = (MyView) findViewById(R.id.gameView);
+		coin.add(new Coins());
+		coin.add(new Coins());
+		coin.add(new Coins());
+		coin.add(new Coins());
+		coin.add(new Coins());
+		coin.add(new Coins());
+		coin.add(new Coins());
+		coin.add(new Coins());
+
+
+
+		myView.setGoldCoins(coin);
+		//listener of our pacman
+		button.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				myView.moveLeft(10);
+			}
+		});
+		button = (Button) findViewById(R.id.moveRight);
 		myView = (MyView) findViewById(R.id.gameView);
 		//listener of our pacman
 		button.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				myView.moveRight(10);
 			}
 		});
-		
-		
+		button = (Button) findViewById(R.id.moveUp);
+		myView = (MyView) findViewById(R.id.gameView);
+		//listener of our pacman
+		button.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				myView.moveUp(10);
+			}
+		});
+		button = (Button) findViewById(R.id.moveDown);
+		myView = (MyView) findViewById(R.id.gameView);
+		//listener of our pacman
+		button.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				myView.moveDown(10);
+			}
+		});
 	}
 
 	@Override

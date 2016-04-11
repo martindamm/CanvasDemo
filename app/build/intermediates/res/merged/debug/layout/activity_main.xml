@@ -1,26 +1,51 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent"
-    tools:context="org.example.canvasdemo.MainActivity" >
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Move"
-        android:id="@+id/moveButton"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/points" />
+    android:layout_height="fill_parent"
+    tools:context="org.example.canvasdemo.MainActivity">
 
     <!-- Notice how the custom view is referenced here-->
     <org.example.canvasdemo.MyView
         android:id="@+id/gameView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
     </org.example.canvasdemo.MyView>
 
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/moveLeft"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/moveLeft"
+        android:id="@+id/moveRight" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/moveRight"
+        android:id="@+id/moveUp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Down"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/moveUp"
+        android:id="@+id/moveDown" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/points" />
+
+
+</RelativeLayout>
